@@ -9,7 +9,7 @@
    尽管我们在使用cnpm的时候，有遇到一些莫名其妙的错误，尤其是在生产环境中的时候，但是在本地环境，cnpm绝对是最好的选择
    因为在我们学习的过程中，时间不应该浪费在包的下载上，而是实际的开发中。
 
-   `cnpm install -g create-react-app`
+   `cnpm install -g create-react-app`  
    `create-react-app load_react_one`
 
    以上的命令会创建出一个完整的react项目。当然你如果更相信npm你也可以使用npm，但是在react官网中，还有一种创建方式：

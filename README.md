@@ -40,9 +40,11 @@
    `<div onclick={this.run}></div>`<br>
    但是要注意的是在react组件中，由于是继承的原因，本身没有自己的this对象。所以方法里面直接使用this是无法指向组件的
    只有在组件中使用super方法将this指向到react后才可以使用，所以就产生了子组件里面方法解决this指向的3种方法：<br>
-   ![](https://github.com/1193950650/load_react_one/blob/master/src/asstes/githubImage/this(3).jpg)<br>
+
+   ![](https://github.com/1193950650/load_react_one/blob/master/src/asstes/githubImage/this(5).jpg)
    ![](https://github.com/1193950650/load_react_one/blob/master/src/asstes/githubImage/this(4).jpg)<br>
-   ![](https://github.com/1193950650/load_react_one/blob/master/src/asstes/githubImage/this(5).jpg)<br>
+   ![](https://github.com/1193950650/load_react_one/blob/master/src/asstes/githubImage/this(3).jpg)<br>
+
    在以上代码中不难看出，this都指向了我们的子组件方法里面，分别是通过bind 和 es6箭头函数来解决，bind又可以在constructor和<br>
    具体的html上直接bind。<br>
 

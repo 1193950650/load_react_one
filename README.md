@@ -23,6 +23,7 @@
 
 ## react组件
 
+   ####react属性绑定和循环渲染数据：
    在react中,组件的写法由于是js和html混合着写，导致在html中的标签一些属性绑定的时候，和js的关键字有冲突。所以在做数据绑定
    的时候，需要避开例如：
    `class`
@@ -35,6 +36,57 @@
 
    在组件中，还有需要注意的是组件名首字母大写，类名首字母大写。
 
+   ####react组件中的事件绑定：
+   在react组件中，事件绑定的使用方式是直接在jsx语法糖上增加一个属性：onClick 例如：
+   `<div onclick={this.run}></div>`
+   但是要注意的是在react组件中，由于是继承的原因，本身没有自己的this对象。所以方法里面直接使用this是无法指向组件的
+   只有在组件中使用super方法将this指向到react后才可以使用，所以就产生了子组件里面方法解决this指向的3种方法：
+   `
+   import React from 'react'
+
+   class ClickMethods extends React.Component{
+       constructor(){
+           super()
+           this.state = {
+               run:'1',
+               runTow:'2',
+               runThree:'3'
+           }
+           this.run = this.run.bind(this)
+       }
+       run(){
+           alert('这是点击的第一个')
+           this.setState({
+               runThree:'3'
+           })
+       }
+       runTow(){
+           alert('这是点击的第二个')
+       }
+       runThree=()=>{
+           alert('这是点击的第三个')
+           this.setState({
+               runThree:'55555'
+           })
+       }
+       render(){
+           return (
+               <div>
+                   <div onClick={this.run}>点击第一个--{this.state.run}</div>
+                   <br/>
+                   <div onClick={this.runTow.bind(this)}>点击第二个{this.state.runTow}</div>
+                   <br/>
+                   <div onClick={this.runThree}>点击第三个{this.state.runThree}</div>
+                   <br/>
+               </div>
+           )
+       }
+   }
+
+   export default ClickMethods
+   `
+   在以上代码中不难看出，this都指向了我们的子组件方法里面，分别是通过bind 和 es6箭头函数来解决，bind又可以在constructor和
+   具体的html上直接bind。
 
 
    ## 总结：

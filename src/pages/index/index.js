@@ -1,5 +1,6 @@
 import React,{Component} from 'react'
-
+import Top from '../../components/indexComponents/pageTop'
+import ClickMethods from '../../components/indexComponents/clickMethods'
 class Index extends Component{
     constructor(props){
         super(props)
@@ -29,6 +30,8 @@ class Index extends Component{
     render(){
         return(
             <div className={'react'}>
+                <Top></Top>
+                <ClickMethods></ClickMethods>
                 {
                     this.state.dataList.map(function(value,key){
                         return <div key={key} title={value.name}><a href={value.age}>{value.name}</a></div>

@@ -1,5 +1,4 @@
 import React from 'react'
-
 class ClickMethods extends React.Component{
     constructor(){
         super()
@@ -38,5 +37,4 @@ class ClickMethods extends React.Component{
         )
     }
 }
-
 export default ClickMethods

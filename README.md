@@ -9,7 +9,7 @@
    尽管我们在使用cnpm的时候，有遇到一些莫名其妙的错误，尤其是在生产环境中的时候，但是在本地环境，cnpm绝对是最好的选择
    因为在我们学习的过程中，时间不应该浪费在包的下载上，而是实际的开发中。
 
-   `cnpm install -g create-react-app`  
+   `cnpm install -g create-react-app`
    `create-react-app load_react_one`
 
    以上的命令会创建出一个完整的react项目。当然你如果更相信npm你也可以使用npm，但是在react官网中，还有一种创建方式：
@@ -19,4 +19,7 @@
    这种创建方式相对于npm或者cnpm来说，首先简化了创建的命令，当然不止这一个好处，还有个特殊的地方在于，当创建完了后
    脚手架 create-react-app 是会被自动删除的。
 
-## load_react_one
+## 总结：
+
+   无论是通过什么工具，npm 也好 cnpm也好  只要是通过create-react-app 这个脚手架来创建的项目，目录结构基本都是
+   类似的，但是在运行的时候都得用 npm

@@ -45,11 +45,14 @@
    ![](https://github.com/1193950650/load_react_one/blob/master/src/asstes/githubImage/this(4).jpg)<br>
    ![](https://github.com/1193950650/load_react_one/blob/master/src/asstes/githubImage/this(3).jpg)<br>
 
-   在以上代码中不难看出，this都指向了我们的子组件方法里面，分别是通过bind 和 es6箭头函数来解决，bind又可以在constructor和<br>
-   具体的html上直接bind。<br>
+   在以上代码中不难看出，this都指向了我们的子组件方法里面，分别是通过bind 和 es6箭头函数来解决，bind又可以在constructor和
+   具体的html上直接bind。在子组件的方法里面，有了this对象我们就可以调用继承的父方法里面的方法。
 
-
-
+#### 在react中如何使用样式表：<br>
+    在react中使用css样式有3种方式:<br>
+    1:在入口文件的地方直接使用CDN的方式引入
+    2:每个组件单独import
+    3:行内使用，在行内使用的时候需要注意的是，style需要是对象的方式传入。  
    ## 总结：
 
    无论是通过什么工具 只要是通过create-react-app 这个脚手架来创建的项目，目录结构基本都是<br>

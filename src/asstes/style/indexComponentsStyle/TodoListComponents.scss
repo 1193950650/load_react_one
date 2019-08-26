@@ -1,0 +1,26 @@
+.userInfoTodoList{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+  & > div{
+    width: 430px;
+    height: auto;
+    border: 1px solid #f1f1f1;
+    padding: 10px;
+    .items{
+      display: flex;
+      margin-bottom: 6px;
+      label{
+        width: 100px;
+        align-items: center;
+      }
+      input{
+        flex: 1;
+        border-radius: 3px;
+        border:1px solid #f1f1f1;
+        padding: 5px;
+      }
+    }
+  }
+}

@@ -4,6 +4,7 @@ import ClickMethods from '../../components/indexComponents/clickMethods'
 import ClickMethodsEvent from '../../components/indexComponents/clickMethodsEvent'
 import MethodsForm from '../../components/indexComponents/methodsForm'
 import TodoListReactComponents from '../../components/indexComponents/TodoListComponents'
+import ComponentsMounted from '../../components/indexComponents/componentsAmount'
 class Index extends Component{
     constructor(props){
         super(props)
@@ -47,6 +48,8 @@ class Index extends Component{
                     <div>
                         <TodoListReactComponents></TodoListReactComponents>
                     </div>
+
+                    <ComponentsMounted></ComponentsMounted>
             </div>
         )
     }

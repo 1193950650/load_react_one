@@ -6,5 +6,4 @@ class App extends Component{
         return <Index></Index>
     }
 }
-
 export default App;

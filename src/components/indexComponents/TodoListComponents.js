@@ -27,14 +27,14 @@ export default class TodoListComponents extends Component {
             form:homeAdressForm
         })     
      }
-     addUserAdress=()=>{
+    addUserAdress=()=>{
         let newUserInfoList = this.state.userInfoList
         newUserInfoList.unshift(JSON.parse(JSON.stringify(this.state.form)))
         this.setState({
             userInfoList:newUserInfoList
         })
      }
-     deleteUserInfo=(key)=>{
+    deleteUserInfo=(key)=>{
         let newDeleteUserInfo = this.state.deleteUserInfoList
         let newUserInfoList = this.state.userInfoList
         newDeleteUserInfo.unshift(newUserInfoList[key])
@@ -44,7 +44,7 @@ export default class TodoListComponents extends Component {
             deleteUserInfoList:newDeleteUserInfo
         })
      }
-     deleteUserInfoRely=(key)=>{
+    deleteUserInfoRely=(key)=>{
         let newDeleteUserInfo = this.state.deleteUserInfoList
         newDeleteUserInfo.splice(key,1)
         this.setState({

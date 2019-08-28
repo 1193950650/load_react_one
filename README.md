@@ -72,10 +72,10 @@
 
    周期|意义|触发更新
    ---|---|---
-   shouldComponentUpdate|是否执行本次更新渲染（根据来return的Boolen来判断）|state
-   componentWillUpdate|即将更新组件（当shouldComponentUpdate 返回true）|state
-   render|正在更新挂载（当shouldComponentUpdate 返回true）|state
-   componentDidUpdate|完成组件更新挂载（当shouldComponentUpdate 返回true）|state
+   shouldComponentUpdate|是否执行本次更新渲染（根据来return的Boolen来判断）|state/props
+   componentWillUpdate|即将更新组件（当shouldComponentUpdate 返回true）|state/props
+   render|正在更新挂载（当shouldComponentUpdate 返回true）|state/props
+   componentDidUpdate|完成组件更新挂载（当shouldComponentUpdate 返回true）|state/props
    componentWillReceiveProps|检测到props已经发生了改变|props
 
    注意：以上更新周期不会影响到第一次挂载的生命周期。如果是通过props来触发更新，那么则在更新的生命周期里面多了一个componentWillReceiveProps 检测props变化的生命周期。

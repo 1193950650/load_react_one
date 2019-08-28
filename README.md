@@ -64,9 +64,9 @@
    周期|意义
    ---|---
    compomentWillMount|组件将要被挂载
-   render|正在挂在
+   render|正在挂载
    componentDidMount|组件挂在结束
-   
+
    ## 总结：
    
    继续更新中...

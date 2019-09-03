@@ -5,6 +5,7 @@ import ClickMethodsEvent from '../../components/indexComponents/clickMethodsEven
 import MethodsForm from '../../components/indexComponents/methodsForm'
 import TodoListReactComponents from '../../components/indexComponents/TodoListComponents'
 import ComponentsMounted from '../../components/indexComponents/componentsAmount'
+import Father from '../../components/propsComponents/father'
 class Index extends Component{
     constructor(props){
         super(props)
@@ -50,6 +51,9 @@ class Index extends Component{
                     </div>
 
                     <ComponentsMounted></ComponentsMounted>
+
+                    <div className='header'>组件之间传值</div>
+                    <Father></Father>
             </div>
         )
     }
